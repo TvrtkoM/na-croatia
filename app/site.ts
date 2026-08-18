@@ -21,6 +21,10 @@ export const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=
 export const TEAMS_URL =
   "https://teams.live.com/meet/9390459011004?p=cq5L47cb1sOWoS3Pjs";
 
+// Display form and E.164 form (for tel: links and schema.org)
+export const PHONE_DISPLAY = "+385 92 20 28 138";
+export const PHONE_E164 = "+385922028138";
+
 export type Meeting = {
   id: string;
   day: string; // Croatian display name

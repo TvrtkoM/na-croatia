@@ -8,6 +8,8 @@ import {
   GOOGLE_MAPS_URL,
   MEETINGS,
   OG_IMAGE_PATH,
+  PHONE_DISPLAY,
+  PHONE_E164,
   SITE_NAME,
   SITE_URL,
   STREET_ADDRESS,
@@ -28,6 +30,13 @@ const jsonLd = {
       logo: `${SITE_URL}${OG_IMAGE_PATH}`,
       description:
         "Anonimni narkomani (NA) su neprofitna zajednica muškaraca i žena kojima je droga postala ozbiljan problem. Jedini uvjet za članstvo je želja za prestankom uzimanja droga. NA Hrvatska organizira redovite sastanke u Zagrebu.",
+      telephone: PHONE_E164,
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: PHONE_E164,
+        contactType: "helpline",
+        availableLanguage: ["hr", "en"],
+      },
     },
     ...MEETINGS.map((meeting) => ({
       "@type": "Event",
@@ -202,6 +211,34 @@ export default function Home() {
               className="inline-flex items-center justify-center rounded-lg bg-na-green px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-na-grey"
             >
               Otvori u Google kartama
+            </a>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="contact-heading"
+          className="mx-auto max-w-5xl px-4 pb-12"
+        >
+          <h2
+            id="contact-heading"
+            className="text-2xl font-semibold text-na-dark"
+          >
+            Kontakt
+          </h2>
+          <div className="mt-4 flex flex-col items-start gap-4 rounded-xl bg-white p-6 shadow-sm ring-1 ring-na-grey/20 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-na-grey">
+                Za sva pitanja i podršku nazovite nas:
+              </p>
+              <p className="mt-1 text-lg font-semibold text-na-dark">
+                {PHONE_DISPLAY}
+              </p>
+            </div>
+            <a
+              href={`tel:${PHONE_E164}`}
+              className="inline-flex items-center justify-center rounded-lg bg-na-green px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-na-grey"
+            >
+              Nazovi
             </a>
           </div>
         </section>
