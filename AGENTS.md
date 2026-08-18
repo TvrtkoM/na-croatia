@@ -17,8 +17,8 @@ Crkva sv. Blaža, Prilaz Gjure Deželića 64, Zagreb
 
 ### Schedule
 
-Tuesdays 7PM (Croatian)
-Thursdays 7PM (English)
+Tuesdays 7:15PM (Croatian)
+Thursdays 7:15PM (English)
 Saturdays 12PM (Croatian)
 
 Online meetings every monday 9PM via Microsoft Teams (link: https://teams.live.com/meet/9390459011004?p=cq5L47cb1sOWoS3Pjs)
