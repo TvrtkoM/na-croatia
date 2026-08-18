@@ -13,9 +13,10 @@ export const ADDRESS_LOCALITY = "Zagreb";
 export const ADDRESS_COUNTRY = "HR";
 export const FULL_ADDRESS = `${VENUE_NAME}, ${STREET_ADDRESS}, ${ADDRESS_LOCALITY}`;
 
-export const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${STREET_ADDRESS}, ${ADDRESS_LOCALITY}`
-)}`;
+export const GEO_LATITUDE = 45.81118203165567;
+export const GEO_LONGITUDE = 15.960303761922411;
+
+export const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${GEO_LATITUDE}%2C${GEO_LONGITUDE}`;
 
 export const TEAMS_URL =
   "https://teams.live.com/meet/9390459011004?p=cq5L47cb1sOWoS3Pjs";
