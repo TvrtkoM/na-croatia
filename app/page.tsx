@@ -13,7 +13,6 @@ import {
   SITE_NAME,
   SITE_URL,
   STREET_ADDRESS,
-  TEAMS_URL,
   VENUE_NAME,
 } from "./site";
 
@@ -112,8 +111,8 @@ export default function Home() {
             role="status"
             className="rounded-full border border-white/70 bg-na-dark/20 px-4 py-2 text-sm font-medium text-white"
           >
-            🚧 Naša nova web stranica je u izradi — informacije o sastancima
-            u nastavku su ažurne.
+            🚧 Naša nova web stranica je u izradi — informacije o sastancima u
+            nastavku su ažurne.
           </div>
         </div>
       </header>
@@ -130,13 +129,12 @@ export default function Home() {
             Što su Anonimni narkomani?
           </h2>
           <p className="mt-4 max-w-3xl leading-relaxed text-na-dark">
-            Anonimni narkomani su neprofitna zajednica muškaraca i žena
-            kojima je droga postala ozbiljan problem. Mi smo ovisnici u
-            oporavku koji se redovito sastaju kako bi pomogli jedni drugima
-            ostati čisti. Jedini uvjet za članstvo je želja za prestankom
-            uzimanja droga. NA Hrvatska organizira sastanke u Zagrebu na
-            kojima se članovi mogu redovito sastajati i podržavati jedni
-            druge u oporavku.
+            Anonimni narkomani su neprofitna zajednica muškaraca i žena kojima
+            je droga postala ozbiljan problem. Mi smo ovisnici u oporavku koji
+            se redovito sastaju kako bi pomogli jedni drugima ostati čisti.
+            Jedini uvjet za članstvo je želja za prestankom uzimanja droga. NA
+            Hrvatska organizira sastanke u Zagrebu na kojima se članovi mogu
+            redovito sastajati i podržavati jedni druge u oporavku.
           </p>
         </section>
 
@@ -199,9 +197,7 @@ export default function Home() {
           </h2>
           <div className="mt-4 flex flex-col items-start gap-4 rounded-xl bg-white p-6 shadow-sm ring-1 ring-na-grey/20 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-lg font-semibold text-na-dark">
-                {VENUE_NAME}
-              </p>
+              <p className="text-lg font-semibold text-na-dark">{VENUE_NAME}</p>
               <p className="text-na-grey">{FULL_ADDRESS}</p>
             </div>
             <a

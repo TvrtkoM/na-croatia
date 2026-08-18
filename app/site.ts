@@ -7,8 +7,9 @@ export const SITE_URL = "https://na-hrvatska.org";
 
 export const SITE_NAME = "Anonimni narkomani Hrvatska";
 
-export const VENUE_NAME = "Crkva sv. Blaža";
-export const STREET_ADDRESS = "Prilaz Gjure Deželića 64";
+export const VENUE_NAME = "župa sv. Blaža";
+export const STREET_ADDRESS =
+  "Prilaz Gjure Deželića 64, Ulaz iz Kordunske, nasuprot Kinoteke";
 export const ADDRESS_LOCALITY = "Zagreb";
 export const ADDRESS_COUNTRY = "HR";
 export const FULL_ADDRESS = `${VENUE_NAME}, ${STREET_ADDRESS}, ${ADDRESS_LOCALITY}`;
