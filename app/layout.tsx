@@ -14,49 +14,49 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Narcotics Anonymous (NA) Croatia — a free fellowship for men and women recovering from drug addiction. Find NA meeting times and locations in Zagreb: in-person and online recovery meetings, every week.";
+  "Anonimni narkomani (NA) Hrvatska — besplatna zajednica muškaraca i žena u oporavku od ovisnosti o drogama. Pronađite termine i lokacije NA sastanaka u Zagrebu: sastanci oporavka uživo i online, svaki tjedan.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — NA Meetings in Zagreb`,
+    default: `${SITE_NAME} — NA sastanci u Zagrebu`,
     template: `%s | ${SITE_NAME}`,
   },
   description,
   keywords: [
-    "Narcotics Anonymous",
+    "Anonimni narkomani",
     "NA",
-    "NA Croatia",
-    "NA Zagreb",
-    "drug addiction recovery",
-    "recovery meetings",
-    "drug addiction help",
-    "12 step program",
+    "Anonimni narkomani Hrvatska",
+    "Anonimni narkomani Zagreb",
     "sastanci NA Zagreb",
-    "anonimni narkomani",
+    "oporavak od ovisnosti",
+    "ovisnost o drogama pomoć",
+    "pomoć ovisnicima",
+    "12 koraka",
+    "Narcotics Anonymous Croatia",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: `${SITE_NAME} — NA Meetings in Zagreb`,
+    title: `${SITE_NAME} — NA sastanci u Zagrebu`,
     description,
     url: SITE_URL,
     siteName: SITE_NAME,
-    locale: "en",
+    locale: "hr_HR",
     type: "website",
     images: [
       {
         url: OG_IMAGE_PATH,
         width: 1200,
         height: 630,
-        alt: "Narcotics Anonymous logo",
+        alt: "Logo Anonimnih narkomana",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — NA Meetings in Zagreb`,
+    title: `${SITE_NAME} — NA sastanci u Zagrebu`,
     description,
     images: [OG_IMAGE_PATH],
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="hr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

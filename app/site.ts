@@ -5,7 +5,7 @@
 // TODO: confirm final domain
 export const SITE_URL = "https://na-hrvatska.org";
 
-export const SITE_NAME = "Narcotics Anonymous Croatia";
+export const SITE_NAME = "Anonimni narkomani Hrvatska";
 
 export const VENUE_NAME = "Crkva sv. Blaža";
 export const STREET_ADDRESS = "Prilaz Gjure Deželića 64";
@@ -22,11 +22,12 @@ export const TEAMS_URL =
 
 export type Meeting = {
   id: string;
-  day: string;
+  day: string; // Croatian display name
+  schemaDay: string; // English day name for schema.org byDay
   time: string;
   isoTime: string; // HH:MM in 24h, for schema.org
-  language: "Croatian" | "English";
-  format: "In person" | "Online";
+  language: "Hrvatski" | "Engleski";
+  format: "Uživo" | "Online";
   description: string;
   href?: string;
 };
@@ -34,39 +35,43 @@ export type Meeting = {
 export const MEETINGS: Meeting[] = [
   {
     id: "tuesday",
-    day: "Tuesday",
-    time: "7:00 PM",
+    day: "Utorak",
+    schemaDay: "Tuesday",
+    time: "19:00",
     isoTime: "19:00",
-    language: "Croatian",
-    format: "In person",
-    description: `In person at ${FULL_ADDRESS}`,
+    language: "Hrvatski",
+    format: "Uživo",
+    description: `Uživo — ${FULL_ADDRESS}`,
   },
   {
     id: "thursday",
-    day: "Thursday",
-    time: "7:00 PM",
+    day: "Četvrtak",
+    schemaDay: "Thursday",
+    time: "19:00",
     isoTime: "19:00",
-    language: "English",
-    format: "In person",
-    description: `In person at ${FULL_ADDRESS}`,
+    language: "Engleski",
+    format: "Uživo",
+    description: `Uživo — ${FULL_ADDRESS}`,
   },
   {
     id: "saturday",
-    day: "Saturday",
-    time: "12:00 PM",
+    day: "Subota",
+    schemaDay: "Saturday",
+    time: "12:00",
     isoTime: "12:00",
-    language: "Croatian",
-    format: "In person",
-    description: `In person at ${FULL_ADDRESS}`,
+    language: "Hrvatski",
+    format: "Uživo",
+    description: `Uživo — ${FULL_ADDRESS}`,
   },
   {
     id: "monday",
-    day: "Monday",
-    time: "9:00 PM",
+    day: "Ponedjeljak",
+    schemaDay: "Monday",
+    time: "21:00",
     isoTime: "21:00",
-    language: "Croatian",
+    language: "Hrvatski",
     format: "Online",
-    description: "Online via Microsoft Teams",
+    description: "Online putem Microsoft Teamsa",
     href: TEAMS_URL,
   },
 ];
