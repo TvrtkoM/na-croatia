@@ -38,6 +38,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      {
+        url: "/na/NA_logo_illustrator-8-NAWS-2008-e1716139122469.webp",
+        type: "image/webp",
+      },
+    ],
+    apple: "/na/NA_logo_illustrator-8-NAWS-2008-e1716139122469.webp",
+  },
   openGraph: {
     title: `${SITE_NAME} — NA sastanci u Zagrebu`,
     description,
